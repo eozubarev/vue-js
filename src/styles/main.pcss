@@ -1,0 +1,7 @@
+// if создаём новый файл в blocks, нужно пересохранить main.pcss (cmd+s), тогда pcss пересоберётся
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import "normalize.css"; // Если нет точки, то pcss будет искать в node_modules
+@import "./mixins.pcss"; // Если файл лежит в данной или соседней директории, тогда указываем с точкой
+@import "./layout/base.pcss";
+@import './blocks/*.pcss';
